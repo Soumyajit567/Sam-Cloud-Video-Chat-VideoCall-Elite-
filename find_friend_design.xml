@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp">
+
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_notification"
+            android:layout_width="280dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/profile_image">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/name_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="username"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/image_notification"></TextView>
+
+        <Button
+            android:id="@+id/request_accept_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_notifications"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="79dp"
+            android:layout_marginRight="79dp"
+            android:padding="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:text="Accept Friend Request"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:visibility="gone"></Button>
+
+        <Button
+            android:id="@+id/request_decline_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/request_accept_btn"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="79dp"
+            android:layout_marginRight="79dp"
+            android:layout_marginBottom="12dp"
+            android:padding="5dp"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            android:text="Accept Friend Request"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:visibility="gone"></Button>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
